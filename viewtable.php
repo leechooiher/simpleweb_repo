@@ -14,8 +14,8 @@
             <th>Phone</th>
             </tr>
             <tr>
-            <td>0</td>
-            <td>Subway Restaurant</td>
+            <td>0.5</td>
+            <td>Mcd Restaurant</td>
             <td>Menara Standard Chartered, TPM</td>
             <td>03-22441234</td>
             </tr>
