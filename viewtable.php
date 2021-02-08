@@ -35,7 +35,7 @@
 
                 if ($getResults == FALSE)
                 {
-                die(sqlsrv_errors());
+                die("Error reading the database: ".sqlsrv_errors());
                 }
                 
                 while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
