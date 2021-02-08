@@ -1,11 +1,10 @@
 <?php
                 //establish your connection to database server
-                $connectionInfo = array("UID" => "apuadmin", "pwd" => "Apu@123456", "Database" => "simpleweb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-                $serverName = "tcp:simplewebtp000001.database.windows.net,1433";
+                $connectionInfo = array("UID" => "lch", "pwd" => "Admin0811", "Database" => "simplewebdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+                $serverName = "tcp:simplewebtp045992.database.windows.net,1433";
                 $conn = sqlsrv_connect($serverName, $connectionInfo);
-                if (!$conn)
-                {
-                        die("Error connection: ".sqlsrv_errors());
+                if (!$conn) {
+                    die("Error connection: ".sqlsrv_errors());
                 }
 
                 $sql= "INSERT INTO restaurant (restaurant_name, restaurant_address, restaurant_phone) VALUES (?, ?, ?);";
