@@ -19,6 +19,18 @@
             <td>Menara Standard Chartered, TPM</td>
             <td>03-22441234</td>
             </tr>
+            <?php
+                //establish your connection to database server
+                $connectionInfo = array("UID" => "lch", "pwd" => "Admin0811", "Database" => "simplewebdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+                $ServerName = "tcp:simplewebtp045992.database.windows.net,1433";
+                $conn = sqlsrv_connect($serverName, $connectionInfo);
+                if (!$conn) {
+                    die("Error connection: ".sqlsrv_errors());
+                } else {
+                    echo "<script>alert('Success!');</script>";
+                }
+                
+            ?>
         </table>
         </center>
     </body>
